@@ -70,7 +70,7 @@ header {
 /* WINDOWS APP IMAGE STYLING */
 .app-screenshot {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px; /* PC पर थोड़ा छोटा किया */
     margin: 20px auto;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -107,7 +107,7 @@ header {
     text-decoration: none; 
     border-radius: 30px; 
     margin-top: 20px; 
-    font-weight: 600;
+    font-weight: 600; 
     transition: 0.3s ease;
     border: 1px solid #fecaca;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -181,6 +181,8 @@ footer p { color: #ccc; font-size: 0.85em; margin: 5px 0; }
 @media (max-width: 600px) {
     .download-card, .info-box, .warning { width: 90%; }
     .btn-download { padding: 15px 30px; font-size: 1em; }
+    /* मोबाइल के लिए इमेज साइज कम किया */
+    .app-screenshot { max-width: 280px; } 
 }
 </style>
 </head>

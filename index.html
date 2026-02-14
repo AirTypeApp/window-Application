@@ -70,7 +70,7 @@ header {
 /* WINDOWS APP IMAGE STYLING */
 .app-screenshot {
     width: 100%;
-    max-width: 500px; /* PC पर थोड़ा छोटा किया */
+    max-width: 500px; /* PC पर थोड़ा छोटा किया */
     margin: 20px auto;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -179,10 +179,11 @@ footer {
 footer p { color: #ccc; font-size: 0.85em; margin: 5px 0; }
 
 @media (max-width: 600px) {
-    .download-card, .info-box, .warning { width: 90%; }
-    .btn-download { padding: 15px 30px; font-size: 1em; }
-    /* मोबाइल के लिए इमेज साइज कम किया */
-    .app-screenshot { max-width: 280px; } 
+    .container { padding: 20px 10px; } /* मोबाइल पर साइड स्पेस कम किया */
+    .download-card, .info-box, .warning { width: 95%; padding: 20px 15px; box-sizing: border-box; } /* कंटेंट को स्क्रीन के अंदर फिट किया */
+    .btn-download { padding: 15px 25px; font-size: 1em; width: 90%; } /* बटन को मोबाइल फ्रेंडली बनाया */
+    .app-screenshot { max-width: 100%; height: auto; } /* इमेज को पूरी चौड़ाई में सेट किया */
+    h1 { font-size: 1.8em; } /* हेडिंग साइज थोड़ा छोटा किया */
 }
 </style>
 </head>
@@ -270,7 +271,6 @@ footer p { color: #ccc; font-size: 0.85em; margin: 5px 0; }
         Go to Official Site
     </a>
     <p>© 2026 Air Type Official. All rights reserved.</p>
-    <p>Support: remoteairtypeapp@gmail.com</p>
 </footer>
 
 </body>
